@@ -23,7 +23,7 @@ def get_response(user_input, data):
     return random.choice(["I'm sorry, I don't have information on that topic.", "I don't understand. Can you rephrase your question?", "I'm still learning!"])
 
 # Load data from CSV file
-csv_file_path = 'Mental_Health_FAQ.csv'  # Replace with your CSV file path
+csv_file_path = 'financeQA.csv'  # Replace with your CSV file path
 data = load_data_from_csv(csv_file_path)
 
 @app.route('/')
