@@ -19,7 +19,7 @@ def get_response(user_input, data):
     user_input_lower = user_input.lower()
     for item in data:
         if user_input_lower in item["Question"].lower():
-            return item["Answers"]
+            return item["Answer"]
     return random.choice(["I'm sorry, I don't have information on that topic.", "I don't understand. Can you rephrase your question?", "I'm still learning!"])
 
 # Load data from CSV file
