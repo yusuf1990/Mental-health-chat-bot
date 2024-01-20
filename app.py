@@ -18,7 +18,7 @@ def load_data_from_csv(file_path, encoding='utf-8'):
 def get_response(user_input, data):
     user_input_lower = user_input.lower()
     for item in data:
-        if user_input_lower in item["Questions"].lower():
+        if user_input_lower in item["Question"].lower():
             return item["Answers"]
     return random.choice(["I'm sorry, I don't have information on that topic.", "I don't understand. Can you rephrase your question?", "I'm still learning!"])
 
